@@ -59,7 +59,7 @@ void circle(Vec2f c, float r, graphic_buffers *buffs, COLORREF color) {
         for (int y = b0.y; y < b1.y; y++) {
             Vec2f p = c - Vec2f(x,y);
             if (sqrt(p.x*p.x + p.y*p.y) < r) {
-                buffs->set_pixel(x, y, color);
+                buffs->safe_set_pixel(x, y, color);
             }
         }
     }

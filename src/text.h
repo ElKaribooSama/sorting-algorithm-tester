@@ -11,8 +11,8 @@ public:
     TEXTDRAWER(const char *bmp_path, int size);
     ~TEXTDRAWER();
     void setTextSize(int size);
-    void drawCharAt(int character, Vec2f pos, graphic_buffers *buffs, COLORREF color, bool negative = false);
-    void drawStringAt(int *text, int length, Vec2f pos, graphic_buffers *buffs, COLORREF color, bool negative = false);
+    void drawCharAt(char character, Vec2f pos, graphic_buffers *buffs, COLORREF color, bool negative = false);
+    void drawStringAt(char *text, int length, Vec2f pos, graphic_buffers *buffs, COLORREF color, bool negative = false);
 private:
     int FONTSIZE;
     BMP *textFont;
