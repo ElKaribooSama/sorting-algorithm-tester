@@ -1,0 +1,3 @@
+[submodule "bbgl"]
+	path = bbgl
+	url = git@github.com:ElKaribooSama/bbgl.git
